@@ -101,12 +101,30 @@ public class Batalla extends JFrame {
     }
 
     // Devuelve la ruta de la imagen según el tipo de tropa
+    // Devuelve la ruta de la imagen según el tipo de tropa o rey
     private String obtenerImagen(String linea) {
-        for (String clave : imagenes.keySet()) {
-            if (linea.contains(clave)) {
-                return imagenes.get(clave);
-            }
+        // Primero buscar Reyes (para que no se confunda con tropas normales)
+        if (linea.contains("Rey Arquero")) {
+            return imagenes.get("Rey Arquero");
         }
+        if (linea.contains("Rey Espadachin")) {
+            return imagenes.get("Rey Espadachin");
+        }
+        if (linea.contains("Rey Lanzatonio")) {
+            return imagenes.get("Rey Lanzatonio");
+        }
+
+        // Luego buscar tropas normales
+        if (linea.contains("Arquero")) {
+            return imagenes.get("Arquero");
+        }
+        if (linea.contains("Espadachin")) {
+            return imagenes.get("Espadachin");
+        }
+        if (linea.contains("Lanzatonio")) {
+            return imagenes.get("Lanzatonio");
+        }
+
         return null;
     }
 
