@@ -106,15 +106,15 @@ public class Seleccion extends JFrame {
             String seleccion = cbRey.getSelectedItem().toString();
             switch (seleccion) {
                 case "Rey Arquero":
-                    lblRey.setIcon(escalarImagen("recursos/rey/rey_arquero.png", 120, 120));
+                    lblRey.setIcon(escalarImagen("recursos/rey/jugador1/rey_arquero.png", 120, 120));
                     vidaRey.setText("Vida: 300");
                     break;
                 case "Rey Lanzatonio":
-                    lblRey.setIcon(escalarImagen("recursos/rey/rey_lanzatonio.png", 120, 120));
+                    lblRey.setIcon(escalarImagen("recursos/rey/jugador1/rey_lanzatonio.png", 120, 120));
                     vidaRey.setText("Vida: 350");
                     break;
                 case "Rey Espadachin":
-                    lblRey.setIcon(escalarImagen("recursos/rey/rey_espadachin.png", 120, 120));
+                    lblRey.setIcon(escalarImagen("recursos/rey/jugador1/rey_espadachin.png", 120, 120));
                     vidaRey.setText("Vida: 400");
                     break;
             }
@@ -144,15 +144,15 @@ public class Seleccion extends JFrame {
             String seleccion = cb.getSelectedItem().toString();
             switch (seleccion) {
                 case "Arquero":
-                    destino.setIcon(escalarImagen("recursos/Tropas/arquero_tropa.png", 100, 100));
+                    destino.setIcon(escalarImagen("recursos/Tropas/jugador1/arquero_tropa.png", 100, 100));
                     vidaLabel.setText("Vida: 100");
                     break;
                 case "Lanzatonio":
-                    destino.setIcon(escalarImagen("recursos/Tropas/lanzatonio_tropa.png", 100, 100));
+                    destino.setIcon(escalarImagen("recursos/Tropas/jugador1/lanzatonio_tropa.png", 100, 100));
                     vidaLabel.setText("Vida: 120");
                     break;
                 case "Espadachin":
-                    destino.setIcon(escalarImagen("recursos/Tropas/espadachin_tropa.png", 100, 100));
+                    destino.setIcon(escalarImagen("recursos/Tropas/jugador1/espadachin_tropa.png", 100, 100));
                     vidaLabel.setText("Vida: 150");
                     break;
             }
